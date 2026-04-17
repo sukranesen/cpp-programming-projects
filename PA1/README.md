@@ -1,21 +1,27 @@
-# Artifact Management System
+# Rail Marshal System
 
 ## Description
-This project is a command-based simulation system that manages artifacts and researchers. It supports assignment, tracking, and reporting operations while ensuring consistency between data structures.
+This project is a simulation of a rail yard management system that organizes, assembles, and dispatches freight trains. It models how wagons are classified, grouped, and combined into trains based on destination and cargo type.
+
+The system processes commands from an input file and simulates real-world railway logistics operations.
 
 ## Features
-- Manage artifacts and researchers
-- Assign and return artifacts with validation rules
-- Enforce researcher capacity constraints
-- Process commands from an input file
+- Classify wagons based on destination and cargo type
+- Maintain sorted wagon lists by weight
+- Assemble trains from classified wagons
+- Manage departure tracks and dispatch operations
+- Enforce system constraints such as coupler load and hazardous cargo rules
+- Process command-based simulation
 
 ## Data Structures
-- AVL Tree (artifact management)
-- Red-Black Tree (researcher management)
+- Doubly Linked List (wagon management)
+- Matrix structure (classification yard organization)
 
 ## Technologies
 - C++
 - Object-Oriented Programming
+- Dynamic Memory Management
+- File I/O
 
 ## How to Run
 ```bash
